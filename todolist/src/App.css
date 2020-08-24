@@ -1,0 +1,137 @@
+body{
+    background-color: brown;
+}
+
+/* for header tags used */
+.withCancel{
+    padding: 20px;
+    color: white;
+}
+.none{
+    text-align: center;
+    color: white;
+}
+h5{
+    text-align: center;
+    color: white;
+}
+
+/* for forms and printing to-do list*/
+.additems{
+    background-color: darkslategrey;
+    width: 500px;
+    min-height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+#add{
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    padding: 0 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#add:focus{
+    outline: none;
+}
+#add::placeholder{
+    font-size: 20px;
+}
+
+/* for add and edit button */
+.buttonAdd{
+    width: 80px;
+    height: 52px;
+    color: white;
+    background-color: yellowgreen;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.buttonEdit{
+    width: 80px;
+    height: 52px;
+    color: white;
+    background-color: green;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* for showing the items when added */
+.showitems{
+    margin: 25px;
+    margin-left: 40px;
+    color: white;
+    background-color: #bf09ac;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+}
+.showitems p{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 0px 5px 10px;
+    position: relative;
+    transition: ease-in-out;
+}
+.showitems p span{
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* for editing the items */
+#edit{
+    right: 40px;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* for clear all button */
+.cancelAll{
+    padding-left: 350px;
+    top : 0
+}
+.cancel{
+    width: 150px;
+    height: 52px;
+    color: white;
+    background-color: red;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 120px;
+}
+.cancel:focus{
+    outline: none;
+}
+
+/* for loader when to-do list is empty */
+.loading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    margin-left: 150px;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
